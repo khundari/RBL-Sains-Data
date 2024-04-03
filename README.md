@@ -1,5 +1,5 @@
 # RBL-Sains-Data
-Prediksi Rating penjualan samsung 
+Prediksi Harga Penjualan Ponsel Pintar Samsung 
 # Domain Proyek 
 Harga devise Handphone merupakan salah satu hal yang sangat cepat berubah dengan seiring waktu dan berkembangnya zaman. Kemampuan memprediksi harga ponsel pintar tentunya membantu pembeli sebelum melakukan transaksi jual beli ponsel pintar
 
