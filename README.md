@@ -150,3 +150,36 @@ Berdasarkan hasil pengujian, terpilih grid.best_params_ yaitu
  'n_estimators': 100}
 Parameter dengan nilai inilah yang kemudian dibuat sebagai model.
 
+# Evaluasi 
+Adapun metrik yang sebagai alat ukur perfoma model yang dibuat antara lain MSE · MAE · R2.
+
+Berikut merupakan rumus dari masing-masing metrik yang digunakan:
+
+![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/2b3d786b-32ed-4a9a-bd88-2daf87562938)
+
+
+yi mewakili nilai yang diamati, ŷi mewakili nilai prediksi, n adalah jumlah titik data, Var(y) mewakili varians dari nilai yang diamati.
+
+Berikut merupakan penjelasan kegunaan dari masing-masing metrik yang digunakan:
+
+- MAE menghitung rata-rata dari selisih absolut antara nilai prediksi dan nilai aktual. Semakin kecil nilai MAE, semakin baik kualitas model tersebut.
+- MSE menghitung rata-rata dari selisih kuadrat antara nilai prediksi dan nilai aktual. Semakin kecil nilai MSE, semakin baik kualitas model tersebut.
+- R2 digunakan untuk menilai seberapa besar pengaruh variabel independen tertentu terhadap variabel dependen
+
+Matriks berikut merupakan perbandingan 4 buah model yang coba dibandingkan
+
+![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/fdfd974c-d44c-4662-8f6b-029b7f59de5d)
+
+Berdasarkan Tabel 1, secara umum Model 4 (RF2) menampilkan hasil performa yang lebih baik dimana memiliki nilai R^2 yaitu sebesar 0.09195059382785553.
+
+Secara lebih jauh perbandingan Model 1, 2, 3, dan 4 bisa dilihat pada Gambar berikut.
+
+
+![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/a36d1ee2-4f4d-452b-946c-b6e510abdc18)
+
+Berdasarkan Gambar daiatas dapat terlihat bahwa nilai error train dan test dari Model 3 (RF1) dan Model 4 (RF2) jauh lebih baik dibandingkan model lainnya.
+
+Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi hargaponsel pintar dari 4 buah model yang dibuat. Tabel berikut merupakan hasil dari evaluasi model yang telah dibuat.
+
+![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/08fee8fe-075a-4acb-9e72-2ea94afab972)
+
