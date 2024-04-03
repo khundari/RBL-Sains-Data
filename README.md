@@ -138,16 +138,13 @@ Pada proyek yang dikerjakan, algoritma regresi yang coba dibandingkan adalah reg
 Untuk meningkatkan model, dilakukan hyperparamter tuning. Adapun paramater yang di-tuning antara lain n_estimators', 'max_depth', 'min_samples_split', dan 'min_samples_leaf. Untuk memudahkan proses tuning digunakan GridSearchCV. GridSearchCV itu sendiri merupakan bagian dari modul scikit-learn yang dapat digunakan untuk mendapatkan nilai hyperparameter secara otomatis. Grid Search adalah metode yang digunakan untuk mencari parameter yang paling tepat untuk meningkatkan performa model dengan mencoba seluruh kombinasi hyperparameter yang diberikan.
 
 Berikut adalah nilai parameter tuning
-params = {'n_estimators' : [50,80,100],
-          'max_depth' : [3,5,10],
-           'min_samples_split':[2,3,4],
-            'min_samples_leaf': [2,3,4]}
+![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/bd551d4a-e9fd-46f5-a8cc-31cce2c2287f)
+
 
 Berdasarkan hasil pengujian, terpilih grid.best_params_ yaitu
-{'max_depth': 10,
- 'min_samples_leaf': 4,
- 'min_samples_split': 2,
- 'n_estimators': 100}
+
+![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/da2aae93-58ec-414f-8f90-71303baf37b6)
+
 Parameter dengan nilai inilah yang kemudian dibuat sebagai model.
 
 # Evaluasi 
@@ -183,3 +180,15 @@ Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi hargapons
 
 ![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/08fee8fe-075a-4acb-9e72-2ea94afab972)
 
+# Referensi 
+[1]          Aqsho Ramadhan, Y., Faqih, A. and Dwilestari, G. (2023a) ‘Prediksi penjualan handphone di toko X Menggunakan Algoritma regresi linear’, Jurnal Informatika Terpadu, 9(1), pp. 40–44. doi:10.54914/jit.v9i1.692. 
+
+[2]          Fitri, E. (2023) ‘Analisis Perbandingan metode regresi Linier, random forest regression dan gradient boosted trees regression method untuk prediksi Harga Rumah’, Journal of Applied Computer Science and Technology, 4(1), pp. 58–64. doi:10.52158/jacost.v4i1.491. 
+
+[3]          Hasibuan, L.H. and Musthofa, S. (2022) ‘Penerapan metode Regresi Linear Sederhana Untuk prediksi Harga Beras di kota Padang’, JOSTECH: Journal of Science and Technology, 2(1), pp. 85–95. doi:10.15548/jostech.v2i1.3802. 
+
+[4]          Hasibuan, L.H. and Musthofa, S. (2022) ‘Penerapan metode Regresi Linear Sederhana Untuk prediksi Harga Beras di kota Padang’, JOSTECH: Journal of Science and Technology, 2(1), pp. 85–95. doi:10.15548/jostech.v2i1.3802. 
+
+[5]          Pramesti, D. and Wiga Maulana Baihaqi (2023) ‘Perbandingan prediksi Jumlah Transaksi Ojek online menggunakan Regresi Linier dan random forest’, Generation Journal, 7(3), pp. 21–30. doi:10.29407/gj.v7i3.20676. 
+
+[6[          Prof. Rupali et al. (2023) ‘Stock market price prediction by LSTM & linear regression algorithm using machine learning’, International Journal For Multidisciplinary Research, 5(2). doi:10.36948/ijfmr.2023.v05i02.2152. 
