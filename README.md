@@ -104,3 +104,49 @@ Dengan menggunakan metode IQR, dapat ditentukan outlier melalui suatu nilai bata
 Semua proses ini diperlukan dalam rangka membuat model yang baik.
 
 Untuk mereduksi jumlah fitur dilakukan proses PCA. Teknik reduksi ini adalah prosedur yang mengurangi jumlah fitur dengan tetap mempertahankan informasi pada data. PCA ini adalah teknik untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data dari “n-dimensional space” ke dalam sistem berkoordinat baru dengan dimensi m, di mana m lebih kecil dari n. 
+
+pca.explained_variance_ratio_.round(3)
+
+Potongan kode tersebut memberikan keluaran berupa array([1.,0])
+
+# Modeling 
+Seperti yang dijelaskan di awal, model yang dipilih adalah model regresi karena merupakan salah satu algoritma yang paling umum digunakan dalam pembuatan model prediksi. Dalam bentuk yang sederhana, regresi terdiri dari intersep dan slope yang dituliskan dalam rumusan berikut
+
+![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/ef4603b4-e3c8-49ea-905e-12f36836142c)
+
+dimana: 
+
+- y adalah variabel kriterium (variabel terikat yang digunakan untuk memprediksi)
+- a adalah intersep (variabel konstan yang memiliki arti sebagai titik perpotongan suatu garis dengan sumbu Y),
+- b adalah slope (nilai koefisien yang menyatakan ukuran kemiringan suatu garis), dan
+- X adalah variabel prediktor (variabel yang digunakan untuk memprediksi atau menjelaskan variabel lain dalam suatu model)
+
+Secara umum, regresi ini itu sendiri digunakan untuk meramalkan pengaruh variabel prediktor terhadap variabel kriterium atau membuktikan ada atau tidaknya hubungan fungsional antara variabel bebas (X) dengan variabel terikat (y).
+
+Namun begitu terdapat kelebihan dan kekurangan dari model regresi, yaitu:
+
+Kelebihan regresi:
+
+- Kemudahan untuk digunakan
+- Kekuatan Prediktor dalam mengidentifikasi sekuat apa pengaruh yang diberikan oleh variabel prediktor (variabel independen) terhadap variabel lainnya (variabel dependen).
+- Dapat memprediksi nilai/tren di masa yang mendatang
+
+Kelemahan dari model regresi adalah karena hasil ramalan dari analisis regresi merupakan nilai estimasi sehingga kemungkinan untuk tidak sesuai dengan data aktual tetaplah ada.
+
+Pada proyek yang dikerjakan, algoritma regresi yang coba dibandingkan adalah regresi linear, regresi ridge, random forest regressor, dan random forest regressor dengan hyperparamter tuning. Regresi linear adalah teknik analisis data yang memprediksi nilai data yang tidak diketahui dengan menggunakan nilai data lain yang terkait dan diketahui dimana secara matematis dimodelkan sebagai persamaan linier, regresi ridge merupakan metode estimasi koefisien regresi yang diperoleh melalui penambahan konstanta bias c, dan random forest adalah suatu algoritma yang digunakan pada klasifikasi data dalam jumlah yang besar dimana teknik klasifikasi random forest dilakukan melalui penggabungan pohon dengan melakukan training pada sampel data yang dimiliki.
+
+Untuk meningkatkan model, dilakukan hyperparamter tuning. Adapun paramater yang di-tuning antara lain n_estimators', 'max_depth', 'min_samples_split', dan 'min_samples_leaf. Untuk memudahkan proses tuning digunakan GridSearchCV. GridSearchCV itu sendiri merupakan bagian dari modul scikit-learn yang dapat digunakan untuk mendapatkan nilai hyperparameter secara otomatis. Grid Search adalah metode yang digunakan untuk mencari parameter yang paling tepat untuk meningkatkan performa model dengan mencoba seluruh kombinasi hyperparameter yang diberikan.
+
+Berikut adalah nilai parameter tuning
+params = {'n_estimators' : [50,80,100],
+          'max_depth' : [3,5,10],
+           'min_samples_split':[2,3,4],
+            'min_samples_leaf': [2,3,4]}
+
+Berdasarkan hasil pengujian, terpilih grid.best_params_ yaitu
+{'max_depth': 10,
+ 'min_samples_leaf': 4,
+ 'min_samples_split': 2,
+ 'n_estimators': 100}
+Parameter dengan nilai inilah yang kemudian dibuat sebagai model.
+
