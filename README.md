@@ -82,4 +82,24 @@ Koefisien korelasi berkisar antara -1 dan +1. Ia mengukur kekuatan hubungan anta
 Jika diamati, fitur 'ram' memiliki skor korelasi yang cukup besar (0.61) dengan fitur target 'price'. Artinya, fitur 'price' berkorelasi cukup tinggi dengan keempat fitur tersebut. Sementara itu, fitur lainnya memiliki korelasi negatif sehingga, fitur tersebut dapat di-drop.
 
 # Data Preparation 
+Pada proses Data Preparation dilakukan kegiatan seperti Data Gathering, Data Assessing, dan Data Cleaning. Pada proses Data Gathering, data diimpor sedemikian rupa agar bisa dibaca dengan baik menggunakan dataframe Pandas. Untuk proses Data Assessing, berikut adalah beberapa pengecekan yang dilakukan:
+
+- Duplicate data (data yang serupa dengan data lainnya)
+- Missing value (data atau informasi yang "hilang" atau tidak tersedia)
+- Outlier (data yang menyimpang dari rata-rata sekumpulan data yang ada)
+Pada proses Data Cleaning, secara garis besar, terdapat tiga metode yang dapat digunakan antara lain seperti berikut:
+- Dropping (metode yang dilakukan dengan cara menghapus sejumlah baris data)
+- Imputation (metode yang dilakukan dengan cara mengganti nilai yang "hilang" atau tidak tersedia dengan nilai tertentu yang bisa berupa median atau mean dari data)
+- Interpolation (metode menghasilkan titik-titik data baru dalam suatu jangkauan dari suatu data)
+
+Pada kasus proyek ini tidak ada data duplikat dan tidak ditemukan Missing Value.Untuk outlier sendiri dilakukan metode dropping menggunakan metode IQR. IQR sendiri didapatkan dengan cara mengurangi Q3 dengan Q1 sebagaimana rumusan berikut.
+
+![image](https://github.com/khundari/RBL-Sains-Data/assets/162407298/43e07ad6-b93e-427f-87f3-01e9cd99627b)
+
+dimana Q1 adalah kuartil pertama dan Q3 adalah kuartil ketiga.
+
+Dengan menggunakan metode IQR, dapat ditentukan outlier melalui suatu nilai batas yang ditentukan. Setelah menggunakan metode IQR dimana dataset yang sebelumnya berjumlah 407 menjadi 5 rows x 27 columns.
+
+Untuk mereduksi jumlah fitur dilakukan proses PCA. Teknik reduksi ini adalah prosedur yang mengurangi jumlah fitur dengan tetap mempertahankan informasi pada data. PCA ini adalah teknik untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data dari “n-dimensional space” ke dalam sistem berkoordinat baru dengan dimensi m, di mana m lebih kecil dari n
+
 
