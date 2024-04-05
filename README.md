@@ -56,7 +56,8 @@ Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan 
 ![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/85ebf9dd-c65a-4eea-9a4f-041e4e058a14)
 Gambar 1a. Analisis Univariat (Data Kategori)
 
-![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/b690063c-fbde-4e7e-8a23-0a0c82cea553)
+![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/c3c3cd78-9102-4ec1-91a0-04447e359a37)
+
 Gambar 1b. Analisis Univariate (Data Numerik)
 
 Berdasarkan Gambar 1a, dapat dilihat bahwa distribusi data kategori pada nama memiliki perbandingan yang tidak sama. Lebih jauh, pada Gambar 1b, untuk data numerik memiliki karakteristik, yaitu:
