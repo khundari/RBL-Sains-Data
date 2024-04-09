@@ -1,7 +1,7 @@
 # RBL-Sains-Data
 Prediksi Harga Penjualan Ponsel Pintar Samsung 
 # Domain Proyek 
-Harga devise Handphone merupakan salah satu hal yang sangat cepat berubah dengan seiring waktu dan berkembangnya zaman. Kemampuan memprediksi harga ponsel pintar tentunya membantu pembeli sebelum melakukan transaksi jual beli ponsel pintar
+Harga device Handphone merupakan salah satu hal yang sangat cepat berubah dengan seiring waktu dan berkembangnya zaman. Kemampuan memprediksi harga ponsel pintar tentunya membantu pembeli sebelum melakukan transaksi jual beli ponsel pintar
 
 Dalam hal jual beli ponsel pintar sangat bergantung kepada spesifikasi seperti, kapasitas RAM, processor, camera, price, dan battrey. Salah satu faktor yang menarik untuk ditelusuri lebih lanjut adalah faktor dari ratings dan harga ponsel pintar. Oleh karena itu, dengan pertimbangan faktor tersebut sangat mempengaruhi harga pada ponsel. Kemudian harga ponsel dapat diestimasi dengan melihat seberapa besar korelasi pengaruh pada faktor-faktor tersebut. 
 
@@ -61,11 +61,6 @@ Gambar 1a. Analisis Univariat (Data Kategori)
 Gambar 1b. Analisis Univariate (Data Numerik)
 
 Berdasarkan Gambar 1a, dapat dilihat bahwa distribusi data kategori pada nama memiliki perbandingan yang tidak sama. Lebih jauh, pada Gambar 1b, untuk data numerik memiliki karakteristik, yaitu:
-- koordinat longitude rumah mayoritas berada pada -118 derajat dan -122 derajat dan koordinat latitude rumah mayoritas berada pada 34 derajat dan 38 derajat
-- median dari umur rumah banyak terdistribusi pada rentang umur 10 - 40, namun nilai terbanyak terdapat pada nilai 50.
-- rata-rata terbanyak untuk data total room dan total bedroom yaitu di antara angka 1000-2000 room dan 200-400 bedroom.
-- rata-rata terbanyak untuk data population dan households berada di antara angka 500-1000 dan 200-400.
-- median income dan median house value terbanyak masing-masing berada di antara angka 3 dan 200000.distribusi median house value miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.
 
 ![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/4105ba7f-eb8f-4149-b6c4-8f3b7d6b8c73)
 ![image](https://github.com/khundari/RBL-Sains-Data/assets/164993658/ecfbd442-bca3-40ce-9481-400470cd9f7d)
